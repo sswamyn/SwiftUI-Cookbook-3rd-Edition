@@ -11,7 +11,8 @@ import SwiftUI
 struct UsingImagesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            DCL_barcode()
         }
     }
 }
