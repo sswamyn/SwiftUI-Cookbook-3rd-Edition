@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct EditButtonView: View {
+    @State private var animals = ["Cats", "Dogs", "Goats"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(animals, id: \.self) { animal in
+                Text(animal)
+            }
+            .onDelete(perform: removeAnimal)
+        }
+        .toolbar {
+            EditButton()
+        }
+        .navigationTitle("EditButtonView")
+    }
+    func removeAnimal(at offsets: IndexSet) {
+        animals.remove(atOffsets: offsets)
+        
     }
 }
 
 #Preview {
-    EditButtonView()
+    NavigationStack {
+        EditButtonView()
+    }
 }

@@ -9,7 +9,12 @@ import SwiftUI
 
 struct MenuButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Menu("Choose a country") {
+            Button("Canada") {print("Selected Canada")}
+            Button("India") {print("Selected India")}
+            Button("United States") {print("Selected United States")}
+        }
+        .navigationTitle("Menu Buttons")
     }
 }
 

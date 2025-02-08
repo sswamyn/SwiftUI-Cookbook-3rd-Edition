@@ -14,13 +14,13 @@ struct ContentView: View {
                 NavigationLink("Buttons") {
                     ButtonView()
                 }
-                NavigationLink("EditButtons") {
+                NavigationLink("Edit Buttons") {
                     EditButtonView()
                 }
-                NavigationLink("MenuButtons") {
+                NavigationLink("Menu Buttons") {
                     MenuButtonView()
                 }
-                NavigationLink("PasteButtons") {
+                NavigationLink("Paste Buttons") {
                     PasteButtonView()
                 }
                 NavigationLink("Details about text") {

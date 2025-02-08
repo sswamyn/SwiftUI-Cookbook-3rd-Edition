@@ -9,7 +9,11 @@ import SwiftUI
 
 struct PasteButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("PasteButton controls how you paste in macOs but is not supported in iOS. For more information, check the \"See also\" section of this recipe")
+                .padding()
+        }
+        .navigationTitle("Paste Button")
     }
 }
 
